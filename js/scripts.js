@@ -11,15 +11,15 @@ $(window).bind('scroll', function() {
 });
 
 
-//$(function() {  
-//
-//  // Default
-//    jQuery.scrollSpeed(200, 300);
-//    
-//    // Custom Easing
-//    jQuery.scrollSpeed(200, 300, 'easeOutCubic');
-//    
-//});
+$(function() {  
+
+    Default
+    jQuery.scrollSpeed(200, 300);
+   
+   // Custom Easing
+    jQuery.scrollSpeed(200, 300, 'easeOutCubic');
+    
+});
 
 //
 // contact Form SUBMIT
