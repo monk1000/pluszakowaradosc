@@ -1,9 +1,6 @@
 $(document).ready(function() { 
 
 
-
-
-
     var num = 40; //number of pixels before modifying styles
 
     $(window).bind('scroll', function() {
