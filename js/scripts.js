@@ -1,4 +1,4 @@
- 
+$(document).ready(function() { 
 
     var num = 40; //number of pixels before modifying styles
 
@@ -12,15 +12,17 @@
         }
     });
 
-$(document).ready(function() {
+
+    $(function() {  
 
         // Default
-        $jQuery.scrollSpeed(200, 300);
+        jQuery.scrollSpeed(200, 300);
         
         // Custom Easing
-        $jQuery.scrollSpeed(200, 300, 'easeOutCubic');
+        jQuery.scrollSpeed(200, 300, 'easeOutCubic');
         
     });
+    
 
 //
 // contact Form SUBMIT
