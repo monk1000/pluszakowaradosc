@@ -963,6 +963,14 @@ section {
 	display: inline-block;
 }
 
+.time {
+	padding-left: 5px;
+}
+
+.price {
+	padding-right: 5px;
+}
+
 h5 {
 	font-size: 12px;
 }
