@@ -17,7 +17,7 @@ $(document).ready(function() {
     $(function() {  
 
         // Default
-       jQuery.scrollSpeed(100, 1500);
+       jQuery.scrollSpeed(200, 800);
         
         // Custom Easing
        // jQuery.scrollSpeed(200, 300, 'easeOutCubic');
