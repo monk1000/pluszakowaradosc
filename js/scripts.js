@@ -13,10 +13,10 @@ $(window).bind('scroll', function() {
 
 $(function() {  
 
-    Default
+    // Default
     jQuery.scrollSpeed(200, 300);
-   
-   // Custom Easing
+    
+    // Custom Easing
     jQuery.scrollSpeed(200, 300, 'easeOutCubic');
     
 });
