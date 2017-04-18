@@ -1,5 +1,9 @@
 $(document).ready(function() { 
 
+
+
+
+
     var num = 40; //number of pixels before modifying styles
 
     $(window).bind('scroll', function() {
@@ -13,7 +17,7 @@ $(document).ready(function() {
     });
 
 
-    $(function() {  
+  //  $(function() {  
 
         // Default
         jQuery().scrollSpeed(200, 300);
@@ -21,7 +25,7 @@ $(document).ready(function() {
         // Custom Easing
         jQuery().scrollSpeed(200, 300, 'easeOutCubic');
         
-    });
+ //   });
 
 });
 
