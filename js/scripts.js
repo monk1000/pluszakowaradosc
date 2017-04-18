@@ -1,4 +1,4 @@
-$(document).ready(function() { 
+ 
 
     var num = 40; //number of pixels before modifying styles
 
@@ -12,8 +12,7 @@ $(document).ready(function() {
         }
     });
 
-
-    $(function() {  
+$(document).ready(function() {
 
         // Default
        // jQuery.scrollSpeed(200, 300);
@@ -23,7 +22,7 @@ $(document).ready(function() {
         
     });
 
-});
+}
 
 //
 // contact Form SUBMIT
