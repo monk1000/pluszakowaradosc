@@ -22,7 +22,8 @@ $(document).ready(function() {
         jQuery.scrollSpeed(200, 300, 'easeOutCubic');
         
     });
-    
+
+});
 
 //
 // contact Form SUBMIT
