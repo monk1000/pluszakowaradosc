@@ -11,7 +11,7 @@ $(window).bind('scroll', function() {
 });
 
 
-$(function jQuery() {  
+$(function() {  
 
     // Default
     jQuery.scrollSpeed(200, 300);
