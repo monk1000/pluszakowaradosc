@@ -840,7 +840,6 @@ section {
     height: 170px;
     position: relative;
     top: 55px;
-
 }
 
 .name {
@@ -848,13 +847,6 @@ section {
     height: auto;
     font-size: 4.5em;
     padding-top: 0px;
-}
-
-.division {
-	background-image: url('../images/division.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 50px;
 }
 
 .surname {
@@ -1031,14 +1023,319 @@ footer .row {
 
 }
 
-@media screen and (min-width: 768px) {
+/* FOR SMALL TABLETS*/
+
+@media(min-width: 481px) and (max-width: 767px) {
+.row {
+	margin: 0;
+}
+
+h1 {
+font-size: 1.8em;
+}
+
+p {
+font-size: 1em;
+}
+
+section {
+	margin-left: 0;
+}
+
+/*nawigacja*/
+
+.logo {
+	width: 50%;
+	text-align: center;
+	margin: 0;
+}
+.navigation {
+	text-align: none;
+}
+
+.nav {
+	width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-pills li {
+	float: none;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+   border-bottom: none;
+   color: white;
+}
+
+.nav li a:hover {
+	background-color: transparent;
+	border-bottom: none;
+	color: white;
+	text-shadow: none;
+}
+
+.nav li a:focus {
+	border-bottom: none;
+	color: white;
+	text-shadow: none;
+}
+
+.nav .dropdown {
+	display: block;
+	width:100%;
+}
+
+.nav .dropdown-menu {
+	width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 150px;
+    padding: 5px 0;
+    margin: 6px 0;
+    font-size: 13px;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/*Jumbotron*/
 
 .jumbotron {
-    padding-top: 0px;
-    padding-bottom: 48px;
+    background-image: url(../images/bg_plusz_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
 }
 
+.mainslogan {
+	display: inline-block;
+    margin: 145px 0 0 0;
+    width: 100%;
+    height: auto;
 }
+
+.name {
+    width: 100%;
+    height: auto;
+    font-size: 6em;
+    padding-top: 0px;
+}
+
+.surname {
+	margin: 20px 0;
+}
+
+.surname p {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    height: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    color: white;
+    padding-top: 0;
+    text-shadow: 1px 1px 1px grey;
+    margin: 0;
+}
+
+.division {
+	background-image: none;
+	height: 1px;
+	background-color: white;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.scroll {
+	display: none;
+}
+
+/*Kolumny*/
+
+.columns .leftcolumn, .rightcolumn {
+	height: inherit;
+	background-color: rgba(33, 150, 243, 0.03);
+}
+
+.mottotxt {
+	height: inherit;
+}
+
+.misiontxt {
+	height: inherit;
+}
+
+.visiontxt {
+	height: inherit;
+}
+
+.columns .quote p, .vision p, .mission p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: inherit;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.columns .quote {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: -435px;
+    color: white;
+    background-color: rgba(232, 20, 20, 0.53);
+    padding: 25px 60px;
+    box-shadow: 0px 0px 17px 0px rgba(46, 52, 56, 0.38);
+}
+
+.columns .mission {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 235px;
+    z-index: 2;
+    color: white;
+    background-color: rgba(57, 134, 169, 0.69);
+    padding: 25px 60px;
+    box-shadow: 0px 0px 17px 0px rgba(46, 52, 56, 0.38);
+}
+
+.columns .vision {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: -445px;
+    color: white;
+    background-color: rgba(55, 165, 118, 0.69);
+    padding: 25px 60px;
+    box-shadow: 0px 0px 17px 0px rgba(46, 52, 56, 0.38);
+}
+
+.columns .quote p.names {
+	margin-right: 85px;
+}
+
+/*plan dnia*/
+
+.przyciski {
+	width: 100%;
+	text-align: center;
+}
+
+.dayplan-btns {
+	margin: 10px 0;
+}
+
+/*Kadra*/
+.kadra {
+	margin-bottom: 0;
+}
+
+/*Cennik*/
+
+.zajecia {
+	padding: 0;
+}
+
+.zajeciaicons {
+    display: inline-block;
+    width: 40%;
+    margin: 5px;
+}
+
+.klasyk, .karnet {
+	width: 100%;
+}
+
+.karnet {
+	margin: 20px 0 50px 0;
+}
+
+.time, .price {
+	display: inline-block;
+}
+
+.time {
+	padding-left: 5px;
+}
+
+.price {
+	padding-right: 5px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+.borderright { 
+	border-right: none;
+}
+
+.borderleft {
+	border-left: none;
+}
+
+/*Formularz kontaktowy*/
+
+.form {
+	width: 80%;
+}
+
+/*footer*/
+
+footer {
+	height: auto;
+}
+
+footer h4 {
+	text-align: center;
+}
+
+footer .row {
+	margin-bottom: 20px;
+}
+
+.adresleft {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.adresleft p{
+	font-weight: 600;
+	margin: 0;
+}
+
+.adresright p{
+	margin: 0;
+}
+
+.adres, .links, .map {
+	height: auto;
+	margin-bottom: 45px;
+	border: none;
+	text-align: center;
+}
+
+.social {
+	text-align: center;
+	padding: 0;
+}
+
+
+
+
+}
+
 
 
 
