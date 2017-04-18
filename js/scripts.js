@@ -1,24 +1,28 @@
-var num = 40; //number of pixels before modifying styles
+$(document).ready(function() { 
 
-$(window).bind('scroll', function() {
-	
+    var num = 40; //number of pixels before modifying styles
 
-    if ($(window).scrollTop() > num) {
-        $('header').addClass('fixed');
-     } else {
-        $('header').removeClass('fixed');
-    }
-});
+    $(window).bind('scroll', function() {
+    	
+
+        if ($(window).scrollTop() > num) {
+            $('header').addClass('fixed');
+         } else {
+            $('header').removeClass('fixed');
+        }
+    });
 
 
-$(function() {  
+    $(function() {  
 
-    // Default
-    jQuery.scrollSpeed(200, 300);
-    
-    // Custom Easing
-    jQuery.scrollSpeed(200, 300, 'easeOutCubic');
-    
+        // Default
+        jQuery.scrollSpeed(200, 300);
+        
+        // Custom Easing
+        jQuery.scrollSpeed(200, 300, 'easeOutCubic');
+        
+    });
+
 });
 
 //
