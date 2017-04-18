@@ -17,14 +17,14 @@ $(document).ready(function() {
     $(function() {  
 
         // Default
-        $.scrollSpeed(200, 300);
+        $.scrollSpeed(100, 500);
         
         // Custom Easing
        // jQuery.scrollSpeed(200, 300, 'easeOutCubic');
         
     });
 
-});
+
 
 //
 // contact Form SUBMIT
