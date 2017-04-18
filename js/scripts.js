@@ -18,7 +18,7 @@ $(document).ready(function() {
        // jQuery.scrollSpeed(200, 300);
         
         // Custom Easing
-        $(window).scrollSpeed(200, 300, 'easeOutCubic');
+        $(document).scrollSpeed(200, 300, 'easeOutCubic');
         
     });
 
