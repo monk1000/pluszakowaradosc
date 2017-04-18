@@ -373,6 +373,47 @@ header {
 	display: inline-block;
 }
 
+.butn {
+	width: 250px;
+	font-size: 16px;
+	font-family: "Raleway", sans-serif;
+	letter-spacing: 1px;
+	font-weight: 400;
+	background-color: #fafafa;
+	color: #6e5494;
+	border: solid 1px #6e5494;
+	border-radius: 10px;
+	padding: 15px;
+	text-transform: uppercase;
+	transition: .3s;
+	outline: none;
+}
+
+.butn:hover {
+	background-color: #6e5494;
+	color: #fafafa;
+	outline: none;
+}
+
+.butn:visited {
+	background-color: #6e5494;
+	color: #fafafa;
+	outline: none;
+}
+
+.butn:active {
+	background-color: #6e5494;
+	color: #fafafa;
+	outline: none;
+
+}
+
+.butn:focus {
+	background-color: #6e5494;
+	color: #fafafa;
+	outline: none;
+}
+
 .plany{
 	display: block;
 	margin: 0 auto;
@@ -383,7 +424,7 @@ header {
 }
 
 .plandnia {
-	margin: 100px 0 20px 0;
+	margin: 100px 0 130px 0;
 }
 
 .plandnia p {
@@ -414,43 +455,6 @@ header {
 	font-size: 16px;
 }
 
-.btn {
-	font-size: 14px;
-	width: 100%;
-	outline: none;
-}
-
-.btn-lg {
-	padding: 0;
-	outline: none;
-}
-
-.btn-primary {
-	color: #373737;
-    background-color: #fff;
-    border-color: #373737;
-   	font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    transition: .4s;
-    letter-spacing: 1px;
-    outline: none;
-    height: 50px;
-    width: 220px;
-}
-
-.btn-primary:active:focus, .btn-primary:active:hover {
-	color: #fff;
-    background-color: #96858F;
-    border-color: #fff;
-    outline: none;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-	color: #fff;
-    background-color: #96858F;
-    border-color: #fff;
-    outline: none;
-}
 
 .infobox h4{
     color: inherit;
@@ -599,7 +603,11 @@ table .hour{
 form {
 	margin: 0 auto;
 	width: 50%;
+}
 
+.form-control {
+	font-size: 12px;
+	font-family: "Raleway", sans-serif;
 }
 
 .form-group label{
@@ -887,7 +895,7 @@ section {
 /*plan dnia */
 
 .plandnia {
-	margin: 100px 0 100px 0;
+	margin: 100px 0 20px 0;
 }
 
 .infobox {
