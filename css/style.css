@@ -1331,11 +1331,107 @@ footer .row {
 	padding: 0;
 }
 
-
-
-
 }
 
 
+/* BIGGER SCREEN */
+
+@media(min-width: 768px) and (max-width: 992px) {
+
+.row {
+	margin: 0;
+}
+
+/*jumbotron*/
+.jumbotron {
+	background-image: url(../images/bg_plusz_tab.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.mainslogan {
+    display: inline-block;
+    margin: 40px 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.name {
+	width: 100%;
+	font-family: 'Bigelow Rules', sans-serif;
+	height: auto;
+	text-align: center;
+	font-size: 85px;
+    color: yellow;
+    padding-top: 15px;
+    text-shadow: 2px 2px 0px grey;
+}
+
+.division {
+	background-image: none;
+	height: 1px;
+	background-color: white;
+	width: 200px;
+	margin: 18px auto;
+}
+
+.surname p {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	height: 25px;
+	text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 18px;
+    color: mintcream;
+    padding-top: 9px;
+    text-shadow: 1px 1px 1px grey
+}
+
+/* Kolumny */
+
+h1 {
+	font-size: 30px;
+}
+
+.columns .quote, .vision, .mission {
+    width: 100%;
+}
+
+.columns .quote p.names {
+    margin-right: 45px;
+}
+
+.columns .quote p, .vision p, .mission p {
+    font-size: 14px;
+    padding: 0 40px;
+}
+
+.addexercises {
+    display: block;
+    margin: 0px auto;
+}
+
+.klasyk, .karnet {
+    width: 50%;
+    display: inline-block;
+    margin: 25px 0;
+}
+
+.kadra {
+	margin-bottom: 0;
+}
+
+footer p{
+	font-size: 14px;
+}
+
+}
+
+@media(min-width: 993px) and (max-width: 1199px) {
 
 
+}
