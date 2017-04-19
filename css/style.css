@@ -1241,6 +1241,12 @@ section {
 	margin-bottom: 0;
 }
 
+.ih-item.circle {
+    display: inline-block;
+    margin: 20px 0;
+    cursor: default;
+}
+
 /*Cennik*/
 
 .zajecia {
