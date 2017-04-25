@@ -15,30 +15,29 @@
 	</head>
 	<body>
 		<header>
-			<div class="logo">
-					<a href="https://www.facebook.com/pluszakowaradosc/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true" ></i></a>
-					<a href="https://www.instagram.com/pluszakowa_radosc/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-					<!--<a href="#"><i class="fa fa-address-card-o fa-2x" aria-hidden="true"></i></a>-->
-				</div>
-				<div class="navigation">
-					<ul id="nav" class="nav nav-pills">
-						<li role="presentation" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Menu<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a data-scroll href="#misja">Misja i Wizja</a></li>
-								<li><a data-scroll href="#dayplan">Plan dnia</a></li>
-								<li><a data-scroll href="#oplaty">Opłaty</a></li>
-								<li><a data-scroll href="#kadra">Kadra</a></li>
-								<li><a data-scroll href="#formularz">Masz pytanie?</a></li>
-								<!--<li><a data-scroll href="#">Pliki do pobrania</a></li>
-								<li><a data-scroll href="#projektue">Projekt UE</a></li>-->
-							</ul>
-						</li>					
-					</ul>
-				</div>
-		</header>
-
+			<nav>
+				<div class="navbar-header ">				
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger" aria-expanded="false">
+					        <span class="sr-only">rozwin</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+				    </button>
+      			</div>
+ 				<div class="brand">
+ 					<div class="logo"></div>
+ 				</div>
+	    		<div class="collapse navbar-collapse" id="hamburger">
+	    			<ul class="nav navbar-nav">
+    					<li><a class="hidden" data-scroll href="#misja">Misja i Wizja</a></li>
+						<li><a data-scroll href="#dayplan">Plan dnia</a></li>
+						<li><a data-scroll href="#oplaty">Opłaty</a></li>
+						<li><a data-scroll href="#kadra">Kadra</a></li>
+						<li><a data-scroll href="#formularz">Masz pytanie?</a></li>
+	        		</ul>
+			    </div>
+			</nav>
+		</header>	
 		<section class="jumbotron">
 			<div class="mainslogan">
 				<div class="row">
@@ -56,9 +55,7 @@
 			</div>
 			<div class="scroll">
 				<div class="scroller">
-					<a data-scroll href="#motto">
-						<i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i>
-					</a>
+					<i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i>
 				</div>
 			</div>
 		</section>
@@ -77,9 +74,9 @@
 					</div>	
 				</div>
 			</div>
-			<div class="row">
+			<div id="misja" class="row">
 				<div class="col-sm-12 col-md-6 col-lg-6 leftcolumn missiontxt" id="misja">
-					<div class="mission">
+					<div  class="mission">
 						<h1><span>Misja</span> przedszkola</h1>
 						<p>Naszym największym dobrem jest dobro dziecka, przygotowujemy je do odnoszenia sukcesów i radzenia sobie z trudnościami.</p>
 						<p>Pragniemy w każdym dziecku rozbudzać ciekawość świata i ludzi, spostrzegawczość i wrażliwość.</p>
@@ -418,12 +415,11 @@
 		<section>
 			<div class="container">
 				<div id="formularz" class="contactform">
-					<h1>Chcesz nas o coś zapytać?</h1>
+					<h1>Chciałbyś o coś zapytać?</h1>
 					<div class="description">
 						<p>Jeśli maja Państwo jakiekolwiek pomysły, wątpiwości bądź pytania, prosimy serdecznie o nieskrępowany kontakt.</p>
 						<p>Na każde zapytanie postaramy się, wyczerpująco, odpowiedzieć w jak najkrótszym czasie.</p>
 					</div>
-					<!-- <div id="form-messages"></div>   -->
 					<div>
 						<form id="ajax-form" method="POST" action="https://formspree.io/monkhtc@gmail.com" class="form">
 							<div class="row">

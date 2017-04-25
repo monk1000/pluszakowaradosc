@@ -54,21 +54,12 @@ header {
 
 .fixed {
 	position: fixed;
-	background-color: rgb(151, 162, 180);
+	background-color: rgba(60, 135, 156, 0.97);
 	height: 60px;
 }
 
 .center {
 	text-align: center;
-}
-
-
-.navigation{
-	text-align: right;
-}
-
-.caret {
-	text-shadow: 1px 1px 1px #212020;
 }
 
 .description {
@@ -77,100 +68,95 @@ header {
 }
 
 /*logo*/
+.brand {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    margin: -50px 0 0 40px;
+    transition: 1s;
+}
+
+.showme {
+    margin: 3px 0 0 40px;
+    transition: 1.5s;
+}
+
 .logo {
-	width: 300px;
-	float: left;
-	text-align: left;
-	margin-left: 50px;
-}
-
-.logo .fa {
-	margin: 0 20px;
-	line-height: 60px;
-	color: white;
-}
-
-.logo .fa:hover {
-	color: yellow;
-	text-shadow: 1px 1px 1px grey;
-	transition: .3s;
+    display: inline-block;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-position: center;
+    height: 38px;
+    width: 200px;
+    margin: 6px 50px;
 }
 
 /*navigation*/
 
+nav {
+	width: 100%;
+	display: inline-block;
+	height: 60px;
+}
+
+.menu {
+	width: 100%;
+	display: inline-block;
+}
+
 .nav {
-	position: relative;
-	float: right;
-	margin-right: 120px;
 	font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	transition: 1s;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.nav li a {
+.move {
+	font-size: 16px;
+	transition: 1s;
+
+}
+
+.navbar {
+	position: relative;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white
+}
+
+.navbar-default li a {
 	padding: 0 30px;
 	border-radius: 0;
 	color: white;
 	line-height: 60px;
 }
 
-.nav li a:hover {
-	height: 45px;
-	background-color: transparent;
-	border-bottom: 1px dashed white;
-	transition: .3s;
-	color: yellow;
-	text-shadow: 1px 1px 1px grey;
+.navbar-nav li {
+	margin: 0px 40px;
 }
 
-.nav li a:focus {
-	height: 45px;
+.nav li a:hover, .nav li a:focus {
 	background: none;
-	border-bottom: 1px solid white;
-	color: yellow;
-	text-shadow: 1px 1px 1px grey;
-}
-
-.nav .dropdown-menu {
-	width: 220px;
-    position: absolute;
-    top: 100%;
-    left: -50px;
-    z-index: 1000;
-    min-width: 150px;
-    padding: 5px 0;
-    margin: 6px 0;
-    font-size: 13px;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 3px;
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
-}
-.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-	height: 45px;
-	background: none;
-	border-bottom: 1px solid white;
 	color: yellow;
 }
 
-.nav .dropdown-menu li a {
-    color: #3c3c3c;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-    line-height: 35px;
-    text-align: center;
-}
-
-.nav .dropdown-menu li > a:hover,.nav .dropdown-menu li > a:focus {
-	height: inherit;
-    background-color: rgba(155, 207, 210, 0.25);
-    border: none;
-    transition: .3s;
-    text-shadow: none;
+.navbar-nav li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 40px;
+    color: white;
 }
 
 /*jumbotron*/
@@ -224,7 +210,7 @@ header {
 
 /*scroll*/
 
-.scroll a:before {
+.scroller:before {
     display: block;
     content: "";
     width: 50px;
@@ -238,19 +224,13 @@ header {
     border-radius: 50%;
 }
 
-.scroll a {
+.scroller {
 	color: white;
 	position: absolute;
 	bottom: 40px;
 	left: 50%;
 	animation: scrollBtn .8s infinite;
 }
-
-.scroll a:hover {
-	color: yellow;
-	text-shadow: 1px 1px 1px grey;
-}
-
 
 @keyframes scrollBtn {
 	0% {
@@ -733,10 +713,9 @@ footer h4 {
 }
 
 
-/*FOR MOBILE*/
+/*-----------------------FOR MOBILE---------------------------------------------*/
 
 @media(max-width: 480px) {
-
 
 .row {
 	margin: 0;
@@ -754,70 +733,91 @@ section {
 	margin: 0;
 }
 
-/*LOGO*/	
-
-.logo {
+.hidden {
 	display: none;
 }
 
-.nav {
-	float: none;
-	margin-right: 0;
+/*LOGO*/	
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 12px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px dashed rgb(234, 234, 234);
+    border-radius: 4px;
 }
 
-.nav li a {
-	text-align: center;
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: white;
 }
 
-.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-   border-bottom: none;
-   color: white;
+.logo {
+	margin: 7px 48px;
 }
 
-.nav li a:hover {
-	background-color: transparent;
-	border-bottom: none;
-	color: white;
-	text-shadow: none;
-}
-
-.nav li a:focus {
-	border-bottom: none;
-	color: white;
-	text-shadow: none;
-}
-
-.nav .dropdown {
-	display: block;
-	width:100%;
-}
-
-.nav .dropdown-menu {
-	width: 100%;
+.brand {
     position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    min-width: 150px;
-    padding: 5px 0;
-    margin: 6px 0;
-    font-size: 13px;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 0;
-    box-shadow: none;
+    width: 300px;
+    height: 50px;
+    margin: -100px 0 0 40px;
+    transition: 1s;
 }
 
-.nav .dropdown-menu li > a:hover, .nav .dropdown-menu li > a:focus {
-	height: inherit;
-    background-color: rgba(155, 207, 210, 0.25);
-    border: none;
-    transition: .3s;
-    text-shadow: none;
+.showme {
+    margin: -50px 0 0 40px;
+    transition: 1.5s;
 }
 
+.nav {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 1s;
+    display: inline-block;
+    width: 100%;
+}
+
+.navbar-collapse {
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    background: rgb(98, 192, 204);
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+    position: fixed;
+}
+
+.navbar-nav li {
+    margin: 0;
+}
+
+.navbar-nav li:hover {
+   background-color: rgba(204, 56, 56, 0.12);
+}
+
+.navbar-nav li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 40px;
+    color: white;
+}
+
+.navbar-collapse {
+    padding: 0;
+}
 /*jumbotron*/
 
 .jumbotron {
@@ -829,7 +829,7 @@ section {
 
 .mainslogan {
     display: inline-block;
-    margin: 10px auto;
+    margin: 90px auto;
     width: 100%;
     height: 170px;
     position: relative;
@@ -1017,9 +1017,10 @@ footer .row {
 
 }
 
-/* FOR TABLETS*/
+/*--------------------------------------- FOR TABLETS-----------------------------------------------*/
 
-@media(min-width: 481px) and (max-width: 992px) {
+@media(min-width: 481px) and (max-width: 767px) {
+
 .row {
 	margin: 0;
 }
@@ -1040,68 +1041,93 @@ section {
 	min-height: 0;
 }
 
-/*nawigacja*/
+.hidden {
+	display: none;
+}
+
+/*LOGO*/	
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 12px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px dashed rgb(234, 234, 234);
+    border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: white;
+}
 
 .logo {
-	width: 50%;
-	text-align: center;
-	margin: 0;
+	margin: 7px 48px;
 }
-.navigation {
-	text-align: none;
+
+.brand {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    margin: -100px 0 0 40px;
+    transition: 1s;
+}
+
+.showme {
+    margin: -50px 0 0 40px;
+    transition: 1.5s;
 }
 
 .nav {
-	width: 50%;
-    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 1s;
     display: inline-block;
+    width: 100%;
+}
+
+.navbar-collapse {
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    background: rgb(98, 192, 204);
+    width: 100%;
     text-align: center;
+    margin-top: 6px;
+    position: fixed;
 }
 
-.nav-pills li {
-	float: none;
+.navbar-nav li {
+    margin: 0;
 }
 
-.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-   border-bottom: none;
-   color: white;
+.navbar-nav li:hover {
+   background-color: rgba(204, 56, 56, 0.12);
 }
 
-.nav li a:hover {
-	background-color: transparent;
-	border-bottom: none;
-	color: white;
-	text-shadow: none;
+.navbar-nav li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 40px;
+    color: white;
 }
 
-.nav li a:focus {
-	border-bottom: none;
-	color: white;
-	text-shadow: none;
+.navbar-collapse {
+    padding: 0;
 }
 
-.nav .dropdown {
-	display: block;
-	width:100%;
-}
 
-.nav .dropdown-menu {
-	width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    min-width: 150px;
-    padding: 5px 0;
-    margin: 6px 0;
-    font-size: 13px;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 0;
-    box-shadow: none;
-}
 
 /*Jumbotron*/
 
@@ -1191,7 +1217,7 @@ section {
     position: absolute;
     top: -435px;
     color: white;
-    background-color: rgba(232, 20, 20, 0.53);
+    background-color: rgba(232, 20, 20, 0.4);
     padding: 25px 60px;
     box-shadow: 0px 0px 17px 0px rgba(46, 52, 56, 0.38);
 }
@@ -1203,7 +1229,7 @@ section {
     top: 235px;
     z-index: 2;
     color: white;
-    background-color: rgba(57, 134, 169, 0.69);
+    background-color: rgba(57, 134, 169, 0.4);
     padding: 25px 60px;
     box-shadow: 0px 0px 17px 0px rgba(46, 52, 56, 0.38);
 }
@@ -1214,7 +1240,7 @@ section {
     position: absolute;
     top: -445px;
     color: white;
-    background-color: rgba(55, 165, 118, 0.69);
+    background-color: rgba(55, 165, 118, 0.4);
     padding: 25px 60px;
     box-shadow: 0px 0px 17px 0px rgba(46, 52, 56, 0.38);
 }
@@ -1337,3 +1363,433 @@ footer .row {
 
 }
 
+/*--------------------------------------- FOR TABLETS-----------------------------------------------*/
+
+@media(min-width: 768px) and (max-width: 992px) {
+
+.row {
+	margin: 0;
+}
+
+h1 {
+font-size: 1.8em;
+}
+
+p {
+font-size: 1em;
+}
+
+section {
+	margin-left: 0;
+}
+
+.col-md-6 {
+	min-height: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+/*logo*/
+.brand {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    margin: -50px 0 0 0;
+    transition: 1s;
+}
+
+.showme {
+    margin: 3px 0 0 0;
+    transition: 1.5s;
+}
+
+.logo {
+    display: inline-block;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-position: center;
+    height: 38px;
+    width: 200px;
+    margin: 6px 50px;
+}
+
+/*navigation*/
+
+nav {
+	width: 100%;
+	display: inline-block;
+	height: 60px;
+}
+
+.menu {
+	width: 100%;
+	display: inline-block;
+}
+
+.nav {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 1s;
+	display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+
+.move {
+	font-size: 16px;
+	transition: 1s;
+
+}
+
+.navbar {
+	position: relative;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white
+}
+
+.navbar-default li a {
+	padding: 0 30px;
+	border-radius: 0;
+	color: white;
+	line-height: 60px;
+}
+
+.navbar-nav li {
+	margin: 0;
+	display: inline-block;
+	float: none;
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+    background-image: url(../images/bg_plusz_tab.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
+}
+
+.mainslogan {
+	display: inline-block;
+    margin: 145px 0 0 0;
+    width: 100%;
+    height: auto;
+}
+
+.name {
+    width: 100%;
+    height: auto;
+    font-size: 6em;
+    padding-top: 0px;
+}
+
+.surname {
+	margin: 20px 0;
+}
+
+.surname p {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    height: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    color: white;
+    padding-top: 0;
+    text-shadow: 1px 1px 1px grey;
+    margin: 0;
+}
+
+.division {
+	background-image: none;
+	height: 1px;
+	background-color: white;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.scroll {
+	display: none;
+}
+
+/*Kolumny*/
+
+.columns .leftcolumn, .rightcolumn {
+	height: inherit;
+	background-color: rgba(33, 150, 243, 0.03);
+}
+
+.mottotxt {
+	height: inherit;
+}
+
+.misiontxt {
+	height: inherit;
+}
+
+.visiontxt {
+	height: inherit;
+}
+
+.columns .quote p, .vision p, .mission p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: inherit;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.columns .quote {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: -435px;
+    color: white;
+    background-color: rgba(232, 20, 20, 0.4);
+    padding: 25px 60px;
+    box-shadow: 0px 0px 17px 0px rgba(46, 52, 56, 0.38);
+}
+
+.columns .mission {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 235px;
+    z-index: 2;
+    color: white;
+    background-color: rgba(57, 134, 169, 0.4);
+    padding: 25px 60px;
+    box-shadow: 0px 0px 17px 0px rgba(46, 52, 56, 0.38);
+}
+
+.columns .vision {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: -445px;
+    color: white;
+    background-color: rgba(55, 165, 118, 0.4);
+    padding: 25px 60px;
+    box-shadow: 0px 0px 17px 0px rgba(46, 52, 56, 0.38);
+}
+
+.columns .quote p.names {
+	margin-right: 85px;
+}
+
+/*plan dnia*/
+
+.przyciski {
+	width: 100%;
+	text-align: center;
+}
+
+.dayplan-btns {
+	margin: 10px 0;
+}
+
+/*Kadra*/
+.kadra {
+	margin-bottom: 0;
+}
+
+.ih-item.circle {
+    display: inline-block;
+    margin: 20px 6px;
+    cursor: default;
+}
+
+/*Cennik*/
+
+.zajecia {
+	padding: 0;
+}
+
+.zajeciaicons {
+    display: inline-block;
+    width: 40%;
+    margin: 5px;
+}
+
+.klasyk, .karnet {
+	width: 100%;
+}
+
+.karnet {
+	margin: 20px 0 50px 0;
+}
+
+.time, .price {
+	display: inline-block;
+}
+
+.time {
+	padding-left: 5px;
+}
+
+.price {
+	padding-right: 5px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+.borderright { 
+	border-right: none;
+}
+
+.borderleft {
+	border-left: none;
+}
+
+/*Formularz kontaktowy*/
+
+.form {
+	width: 80%;
+}
+
+/*footer*/
+
+footer {
+	height: auto;
+}
+
+footer h4 {
+	text-align: center;
+}
+
+footer .row {
+	margin-bottom: 20px;
+}
+
+.adresleft {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.adresleft p{
+	font-weight: 600;
+	margin: 0;
+}
+
+.adresright p{
+	margin: 0;
+}
+
+.adres, .links, .map {
+	height: auto;
+	margin-bottom: 45px;
+	border: none;
+	text-align: center;
+}
+
+.social {
+	text-align: center;
+	padding: 0;
+}
+
+}
+
+/*--------------------------------------- FOR WIDER SCREE-----------------------------------------------*/
+
+@media(min-width: 993px) and (max-width: 1199px) {
+
+/*logo*/
+.brand {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    margin: -50px 0 0 100px;
+    transition: 1s;
+}
+
+.showme {
+    margin: 3px 0 0 100px;
+    transition: 1.5s;
+}
+
+.logo {
+    display: inline-block;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-position: center;
+    height: 38px;
+    width: 200px;
+    margin: 6px 50px;
+}
+
+/*navigation*/
+
+nav {
+	width: 100%;
+	display: inline-block;
+	height: 60px;
+}
+
+.menu {
+	width: 100%;
+	display: inline-block;
+}
+
+.nav {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 1s;
+	display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+
+.move {
+	font-size: 16px;
+	transition: 1s;
+
+}
+
+.navbar {
+	position: relative;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white
+}
+
+.navbar-default li a {
+	padding: 0 30px;
+	border-radius: 0;
+	color: white;
+	line-height: 60px;
+}
+
+.navbar-nav li {
+	margin: 0;
+	display: inline-block;
+	float: none;
+}
+
+
+}
