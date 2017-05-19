@@ -1,12 +1,11 @@
 $(document).ready(function() { 
 
+//--------------------Navigation after scroll-------------------//
 
     var num = 180; //number of pixels before modifying styles
 
     $(window).bind('scroll', function() {
-    	
-
-        if ($(window).scrollTop() > num) {
+    	if ($(window).scrollTop() > num) {
             $('header').addClass('fixed');
             $('.brand').addClass('showme');
          } else {
@@ -15,15 +14,21 @@ $(document).ready(function() {
         }
     });
 
-
+//--------------------Scroll-------------------//
     $(function() {  
-
-        // Default
        jQuery.scrollSpeed(200, 800);
-        
     });
-});
 
+//--------------------cookies------------------//
+
+    jQuery.fn.cookiesEU({
+        text:       'Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach statystycznych oraz funkcjonalnych.',
+        close:      'Rozumiem',
+        position:   'bottom',
+        parent:     jQuery('nav'),
+    });
+
+});
 
 //
 // contact Form SUBMIT

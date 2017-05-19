@@ -616,6 +616,49 @@ footer h4 {
 	text-shadow: 2px 2px 0 grey;
 	letter-spacing: 1px;
 }
+/*cookies*/
+
+#cookiesEU-box {
+	display: block;
+	position: relative;
+    z-index: 999;
+    overflow: hidden;
+    
+}
+
+.cookiesEU-inner {
+	position: relative;
+    padding: 14px 0;
+    background-color: #bf2121;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: center;
+    height: 40px;
+}
+
+.cookiesEU-text{
+	display: inline-block;
+	padding-right: 100px;
+}
+
+.cookiesEU-close {
+	position: absolute;
+    top: 0;
+    right: 0;
+    padding: 14px 72px;
+    display: inline-block;
+    background-color: rgb(228, 73, 73);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cookiesEU-close:hover {
+	transition: .3s;
+	background-color: #fff;
+}
+
+/*adres*/
 
 .adres, .links, .map {
 	height: 260px;
