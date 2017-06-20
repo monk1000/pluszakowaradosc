@@ -7,9 +7,22 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+.container-fluid {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.row {
+	margin: 0;
+}
 
 section {
 	margin: 100px 0;
+}
+
+figure {
+	flex: 1;
+	margin: 30px 0;
 }
 
 h1 {
@@ -67,7 +80,7 @@ header {
 	text-align: center;
 }
 
-/*logo*/
+/*-------------------------------------------logo-------------------------------------------*/
 .brand {
     position: absolute;
     width: 300px;
@@ -91,7 +104,7 @@ header {
     margin: 6px 50px;
 }
 
-/*navigation*/
+/*-------------------------------------------navigation-------------------------------------------*/
 
 nav {
 	width: 100%;
@@ -115,6 +128,7 @@ nav {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-left: 45px;
 }
 
 .move {
@@ -130,7 +144,7 @@ nav {
 }
 
 .navbar-nav li {
-	margin: 0 40px;
+	margin: 0 10px;
 }
 
 .nav li a:hover, .nav li a:focus {
@@ -145,7 +159,7 @@ nav {
     color: white;
 }
 
-/*jumbotron*/
+/*-------------------------------------------jumbotron-------------------------------------------*/
 .jumbotron {
 	background-image: url(../images/bg_plusz.jpg);
 	background-size: cover;
@@ -194,7 +208,7 @@ nav {
     text-shadow: 1px 1px 1px grey
 }
 
-/*scroll*/
+/*-------------------------------------------scroll-------------------------------------------*/
 
 .scroller:before {
     display: block;
@@ -230,7 +244,7 @@ nav {
 	}
 }
 
-/*Kolumny*/
+/*-------------------------------------------Kolumny-------------------------------------------*/
 
 .columns {
 	margin-top: 0;
@@ -298,8 +312,8 @@ width: 100%;
     letter-spacing: 1px;
 }
 
-/*logo ue*/
-.container.logoue {
+/*-------------------------------------------logo ue-------------------------------------------*/
+/*.container.logoue {
 	text-align: center;
 	width: 100%;
 	margin: 40px auto;
@@ -328,9 +342,9 @@ width: 100%;
 .ueinfo h4{
 	margin-top: 35px;
 	color: inherit;
-}
+}*/
 
-/*infobox'y*/
+/*-------------------------------------------infobox-------------------------------------------*/
 
 .collapse{
 	display: none;
@@ -354,6 +368,7 @@ width: 100%;
 	text-transform: uppercase;
 	transition: .3s;
 	outline: none;
+	margin-top: 26px;
 }
 
 .butn:hover {
@@ -449,7 +464,186 @@ table .hour{
 	text-align: center;
 }
 
-/*zajecia dodatkowe*/
+
+/*-------------------------------------------gallery-------------------------------------------*/
+
+.interior{
+	background-color: rgba(243, 243, 243, 0.4);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.interior .bottom-row {
+	flex: 1;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	margin: 0 45px;
+}
+
+.interior .thumb {
+	width: 200px;
+	height: 133px;
+	border-radius: 5px;
+	margin: 15px 10px;
+	flex: 1;
+	box-shadow: 0px 1px 1px rgba(86, 86, 86, 0.35);
+}
+
+.interior .main-photo-box {
+	position: relative;
+	text-align: center;
+	min-height: 60vh;
+	max-width: 1100px;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.interior .main-photo1 {
+	background-image: url('../images/interiors_images/room1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .main-photo2 {
+	background-image: url('../images/interiors_images/room2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .main-photo3 {
+	background-image: url('../images/interiors_images/sport.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .main-photo4 {
+	background-image: url('../images/interiors_images/bathroom1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .main-photo5 {
+	background-image: url('../images/interiors_images/bathroom2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .main-photo6 {
+	background-image: url('../images/interiors_images/outside.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .room-one {
+	background-image: url('../images/interiors_images/room1_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .room-two {
+	background-image: url('../images/interiors_images/room2_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .sport-one {
+	background-image: url('../images/interiors_images/sport_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .bathroom-one {
+	background-image: url('../images/interiors_images/bathroom1_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .bathroom-two {
+	background-image: url('../images/interiors_images/bathroom2_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .outside {
+	background-image: url('../images/interiors_images/outside_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .description {
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	width: 400px;
+	color: white;
+	font-size: 14px;
+	line-height: 25px;
+
+}
+
+/*-------------------------------------------Kadra-------------------------------------------*/
+.kadra{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.ih-item.circle {
+	display: inline-block;
+	margin: 0 30px;
+	cursor: default;
+}
+
+.ih-item.circle.effect1 .spinner {
+    width: 230px;
+    height: 230px;
+    border: 4px solid #dad3f5;
+    border-right-color: #a3d0e5;
+    border-bottom-color: #CDDC39;
+    border-radius: 50%;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.ih-item.circle.effect1 .info h3 {
+    padding: 80px 0 0 0;
+    height: 115px;
+}
+
+
+/*-------------------------------------------prizes-------------------------------------------*/
+
+.cennik {
+	text-align: center;
+}
+
+.klasyk, .karnet {
+	width: 500px;
+	display: inline-block;
+}
+
+.time {
+	text-align: left;
+	padding-left: 15px;
+}
+
+.price {
+	text-align: center;
+}
+
+.borderright {
+	border-right: 2px solid #a3d0e5;
+}
+
+.borderleft {
+	border-left: 2px solid #a3d0e5;
+}
+
+/*-------------------------------------------zajecia dodatkowe-------------------------------------------*/
 
 .zajecia {
 	text-align: center;
@@ -503,65 +697,9 @@ table .hour{
 	background-color: rgba(204, 83, 234, 0.58);
 }
 
-/*Kadra*/
-.kadra{
-	width: 100%;
-	text-align: center;
-	margin-bottom: 100px;
-}
-
-.ih-item.circle {
-	display: inline-block;
-	margin: 0 30px;
-	cursor: default;
-}
-
-.ih-item.circle.effect1 .spinner {
-    width: 230px;
-    height: 230px;
-    border: 4px solid #dad3f5;
-    border-right-color: #a3d0e5;
-    border-bottom-color: #CDDC39;
-    border-radius: 50%;
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
-}
-
-.ih-item.circle.effect1 .info h3 {
-    padding: 80px 0 0 0;
-    height: 115px;
-}
 
 
-/*Cennik i zasady pobytu*/
-
-.cennik {
-	text-align: center;
-}
-
-.klasyk, .karnet {
-	width: 500px;
-	display: inline-block;
-}
-
-.time {
-	text-align: left;
-	padding-left: 15px;
-}
-
-.price {
-	text-align: center;
-}
-
-.borderright {
-	border-right: 2px solid #a3d0e5;
-}
-
-.borderleft {
-	border-left: 2px solid #a3d0e5;
-}
-/*formularz kontaktowy*/
+/*-------------------------------------------contact form-------------------------------------------*/
 
 .contactform {
 	margin: 0 auto;
@@ -594,7 +732,7 @@ form {
 	width: 250px;
 }
 
-/*footer*/
+/*-------------------------------------------footer-------------------------------------------*/
 
 footer {
 	height: 315px;
@@ -616,49 +754,29 @@ footer h4 {
 	text-shadow: 2px 2px 0 grey;
 	letter-spacing: 1px;
 }
-/*cookies*/
-
-#cookiesEU-box {
-	display: block;
-	position: relative;
-    z-index: 999;
-    overflow: hidden;
-    
-}
-
-.cookiesEU-inner {
-	position: relative;
-    padding: 14px 0;
-    background-color: #bf2121;
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    text-align: center;
-    height: 40px;
-}
-
-.cookiesEU-text{
-	display: inline-block;
-	padding-right: 100px;
-}
+/*-------------------------------------------cookies-------------------------------------------*/
 
 .cookiesEU-close {
-	position: absolute;
-    top: 0;
-    right: 0;
-    padding: 14px 72px;
-    display: inline-block;
-    background-color: rgb(228, 73, 73);
-    color: #fff;
+	max-width: 200px;
+    margin: 15px auto 0 auto;
+    display: block;
+    background-color: rgba(255, 40, 120, 0.86);
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
+    line-height: 40px;
+    font-family: Lato, sans-serif;
+    text-align: center;
 }
 
 .cookiesEU-close:hover {
 	transition: .3s;
-	background-color: #fff;
+	background-color: rgba(243, 78, 140, 0.87);
+	text-decoration: none;
+	color: white;
 }
 
-/*adres*/
+/*-------------------------------------------address / links / map-------------------------------------------*/
 
 .adres, .links, .map {
 	height: 260px;
@@ -742,7 +860,7 @@ footer h4 {
 }
 
 
-/*-----------------------FOR MOBILE---------------------------------------------*/
+/*-------------------------------------------FOR MOBILE-------------------------------------------*/
 
 @media(max-width: 480px) {
 
@@ -759,14 +877,14 @@ font-size: 1em;
 }
 
 section {
-	margin: 0;
+	margin: 20px 0;
 }
 
 .hidden {
 	display: none;
 }
 
-/*LOGO*/	
+/*-------------------------------------------logo-------------------------------------------*/	
 
 .navbar-toggle {
     position: relative;
@@ -795,7 +913,7 @@ section {
 
 .brand {
     position: absolute;
-    width: 100%;
+    width: 80%;
     margin: -100px 0;
     transition: 1s;
     text-align: center;
@@ -816,6 +934,7 @@ section {
     transition: 1s;
     display: inline-block;
     width: 100%;
+    margin-left: 0;
 }
 
 .navbar-collapse {
@@ -848,7 +967,7 @@ section {
 .navbar-collapse {
     padding: 0;
 }
-/*jumbotron*/
+/*-------------------------------------------jumbotron-------------------------------------------*/
 
 .jumbotron {
     background-image: url(../images/bg_plusz_mobile.jpg);
@@ -908,7 +1027,11 @@ section {
 }
 
 
-/*plan dnia */
+/*-------------------------------------------plan dnia-------------------------------------------*/
+
+.butn {
+	max-width: 215px;
+}
 
 .plandnia {
 	margin: 100px 0 20px 0;
@@ -942,7 +1065,35 @@ section {
     width: 220px;
 }
 
-/*KADRA*/
+/*-------------------------------------------gallery-------------------------------------------*/
+
+.interior {
+	background: none;
+	display: block;
+}
+
+.interior .bottom-row {
+	background: none;
+	display: block;
+	justify-content: none;
+	margin: 0;
+}
+
+.interior .thumb {
+	width: 100%;
+    min-height: 255px;
+    border-radius: 0;
+    margin: 10px 0;
+}
+
+.interior .main-photo-box {
+	display: none;
+}
+
+
+
+
+/*-------------------------------------------crew-------------------------------------------*/
 
 .kadra {
 	margin-bottom: 50px;
@@ -955,7 +1106,7 @@ section {
     margin: 20px 0;
 }
 
-/*Cennik*/
+/*-------------------------------------------prizes-------------------------------------------*/
 
 .col-sm-2 {
 	padding-left: 5px;
@@ -1002,7 +1153,7 @@ h5 {
 	border-left: none;
 }
 
-/*Formularz kontaktowy*/
+/*-------------------------------------------contact form-------------------------------------------*/
 
 .form {
 	width: 100%;
@@ -1050,7 +1201,7 @@ footer .row {
 
 }
 
-/*--------------------------------------- FOR TABLETS-----------------------------------------------*/
+/*-------------------------------------------FOR small screen-------------------------------------------*/
 
 @media(min-width: 481px) and (max-width: 767px) {
 
@@ -1078,7 +1229,7 @@ section {
 	display: none;
 }
 
-/*LOGO*/	
+/*-------------------------------------------Logo-------------------------------------------*/	
 
 .navbar-toggle {
     position: relative;
@@ -1128,6 +1279,7 @@ section {
     transition: 1s;
     display: inline-block;
     width: 100%;
+    margin-left: 0;
 }
 
 .navbar-collapse {
@@ -1161,7 +1313,7 @@ section {
     padding: 0;
 }
 
-/*Jumbotron*/
+/*-------------------------------------------Jumbotron-------------------------------------------*/
 
 .jumbotron {
     background-image: url(../images/bg_plusz_tab.jpg);
@@ -1215,7 +1367,7 @@ section {
 	display: none;
 }
 
-/*Kolumny*/
+/*-------------------------------------------columns-------------------------------------------*/
 
 .columns .leftcolumn, .rightcolumn {
 	height: inherit;
@@ -1281,7 +1433,7 @@ section {
 	margin-right: 85px;
 }
 
-/*plan dnia*/
+/*-------------------------------------------day plan-------------------------------------------*/
 
 .przyciski {
 	width: 100%;
@@ -1292,7 +1444,33 @@ section {
 	margin: 10px 0;
 }
 
-/*Kadra*/
+/*-------------------------------------------gallery-------------------------------------------*/
+
+.interior {
+	background: none;
+	display: block;
+}
+
+.interior .bottom-row {
+	background: none;
+	display: block;
+	justify-content: none;
+	margin: 0;
+}
+
+.interior .thumb {
+    width: 100%;
+    min-height: 430px;
+    border-radius: 0;
+    margin: 10px 0;
+}
+
+.interior .main-photo-box {
+	display: none;
+}
+
+
+/*-------------------------------------------crew-------------------------------------------*/
 .kadra {
 	margin-bottom: 0;
 }
@@ -1303,7 +1481,7 @@ section {
     cursor: default;
 }
 
-/*Cennik*/
+/*-------------------------------------------prizes-------------------------------------------*/
 
 .zajecia {
 	padding: 0;
@@ -1347,13 +1525,13 @@ h5 {
 	border-left: none;
 }
 
-/*Formularz kontaktowy*/
+/*-------------------------------------------contact form-------------------------------------------*/
 
 .form {
 	width: 80%;
 }
 
-/*footer*/
+/*-------------------------------------------footer-------------------------------------------*/
 
 footer {
 	height: auto;
@@ -1423,7 +1601,7 @@ section {
 	display: none;
 }
 
-/*logo*/
+/*-------------------------------------------logo-------------------------------------------*/
 .brand {
     position: absolute;
     width: 300px;
@@ -1447,7 +1625,7 @@ section {
     margin: 6px 50px;
 }
 
-/*navigation*/
+/*-------------------------------------------navigation-------------------------------------------*/
 
 nav {
 	width: 100%;
@@ -1483,12 +1661,9 @@ nav {
 }
 
 .navbar-nav li a {
-    color: white;
-}
-
-.navbar-nav li a {
 	color: white;
 	line-height: 60px;
+	padding: 0 17px;
 }
 
 .navbar-nav li {
@@ -1497,7 +1672,7 @@ nav {
 	float: none;
 }
 
-/*Jumbotron*/
+/*-------------------------------------------Jumbotron-------------------------------------------*/
 
 .jumbotron {
     background-image: url(../images/bg_plusz_tab.jpg);
@@ -1551,7 +1726,7 @@ nav {
 	display: none;
 }
 
-/*Kolumny*/
+/*-------------------------------------------columny-------------------------------------------*/
 
 .columns .leftcolumn, .rightcolumn {
 	height: inherit;
@@ -1617,7 +1792,7 @@ nav {
 	margin-right: 85px;
 }
 
-/*plan dnia*/
+/*-------------------------------------------dayplan-------------------------------------------*/
 
 .przyciski {
 	width: 100%;
@@ -1628,7 +1803,73 @@ nav {
 	margin: 10px 0;
 }
 
-/*Kadra*/
+/*-------------------------------------------gallery-------------------------------------------*/
+
+.interior .room-one {
+	background-image: url('../images/interiors_images/room1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .room-two {
+	background-image: url('../images/interiors_images/room2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .sport-one {
+	background-image: url('../images/interiors_images/sport.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .bathroom-one {
+	background-image: url('../images/interiors_images/bathroom1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .bathroom-two {
+	background-image: url('../images/interiors_images/bathroom2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .outside {
+	background-image: url('../images/interiors_images/outside.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+
+.interior {
+	background: none;
+	display: block;
+}
+
+.interior .bottom-row {
+	background: none;
+	display: block;
+	justify-content: none;
+	margin: 0;
+}
+
+.interior .thumb {
+    width: 100%;
+    min-height: 530px;
+    border-radius: 0;
+    margin: 10px 0;
+}
+
+.interior .main-photo-box {
+	display: none;
+}
+
+
+
+
+
+/*-------------------------------------------crew-------------------------------------------*/
 .kadra {
 	margin-bottom: 0;
 }
@@ -1639,7 +1880,7 @@ nav {
     cursor: default;
 }
 
-/*Cennik*/
+/*-------------------------------------------prizes-------------------------------------------*/
 
 .zajecia {
 	padding: 0;
@@ -1683,13 +1924,13 @@ h5 {
 	border-left: none;
 }
 
-/*Formularz kontaktowy*/
+/*-------------------------------------------contact form-------------------------------------------*/
 
 .form {
 	width: 80%;
 }
 
-/*footer*/
+/*-------------------------------------------footer-------------------------------------------*/
 
 footer {
 	height: auto;
@@ -1732,11 +1973,11 @@ footer .row {
 }
 
 
-/*--------------------------------------- FOR WIDER SCREE-----------------------------------------------*/
+/*--------------------------------------- FOR WIDER SCREEN-----------------------------------------------*/
 
 @media(min-width: 992px) and (max-width: 1199px) {
 
-/*logo*/
+/*-------------------------------------------logo-------------------------------------------*/
 .brand {
     position: absolute;
     width: 300px;
@@ -1760,7 +2001,7 @@ footer .row {
     margin: 6px 50px;
 }
 
-/*navigation*/
+/*-------------------------------------------navigation-------------------------------------------*/
 
 nav {
 	width: 100%;
@@ -1783,6 +2024,7 @@ nav {
 	display: inline-block;
     text-align: right;
     width: 100%;
+    margin-left: 0;
 }
 
 .move {
@@ -1808,5 +2050,128 @@ nav {
 	display: inline-block;
 	float: none;
 }
+
+/*-------------------------------------------gallery-------------------------------------------*/
+
+.interior{
+	background-color: rgba(243, 243, 243, 0.4);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.interior .bottom-row {
+	flex: 1;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	margin: 0 5px;
+}
+
+.interior .thumb {
+	width: 200px;
+    height: 101px;
+    border-radius: 2px;
+    margin: 10px 5px;
+	flex: 1;
+	box-shadow: 0px 1px 1px rgba(86, 86, 86, 0.35);
+}
+
+.interior .main-photo-box {
+	position: relative;
+	text-align: center;
+	min-height: 60vh;
+	max-width: 1100px;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.interior .main-photo1 {
+	background-image: url('../images/interiors_images/room1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .main-photo2 {
+	background-image: url('../images/interiors_images/room2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .main-photo3 {
+	background-image: url('../images/interiors_images/sport.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .main-photo4 {
+	background-image: url('../images/interiors_images/bathroom1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .main-photo5 {
+	background-image: url('../images/interiors_images/bathroom2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .main-photo6 {
+	background-image: url('../images/interiors_images/outside.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .room-one {
+	background-image: url('../images/interiors_images/room1_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .room-two {
+	background-image: url('../images/interiors_images/room2_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .sport-one {
+	background-image: url('../images/interiors_images/sport_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .bathroom-one {
+	background-image: url('../images/interiors_images/bathroom1_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .bathroom-two {
+	background-image: url('../images/interiors_images/bathroom2_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .outside {
+	background-image: url('../images/interiors_images/outside_mobile.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.interior .description {
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	width: 400px;
+	color: white;
+	font-size: 14px;
+	line-height: 25px;
+
+}
+
+
+
+
 
 }

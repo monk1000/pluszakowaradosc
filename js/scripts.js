@@ -22,13 +22,98 @@ $(document).ready(function() {
 //--------------------cookies------------------//
 
     jQuery.fn.cookiesEU({
-        text:       'Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach statystycznych oraz funkcjonalnych.',
-        close:      'Rozumiem',
-        position:   'bottom',
-        parent:     jQuery('nav'),
+        text:               'Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach statystycznych oraz funkcjonalnych.',
+        close:              'Rozumiem',
+        position:           'bottom',
+        parent:             jQuery('nav'),
+        use_default_css:    false,
+        box_css:            'width: 60%; margin: 15px auto; min-height: 40px;',
+        inner_css:          'position: relative; background-color: rgba(23, 197, 20, 0.78); color: #ffffff; font-size: 15px; text-align: left; text-align: center; border-radius: 5px; padding: 15px;', 
+        text_css:           'color: white; font-family: Lato, sans-serif; font-weight: 300; line-height: 25px; letter-spacing: 1px;',
+        // close_css:          'max-width: 200px; margin: 15px auto 0 auto; display: block; background-color: rgba(255, 40, 120, 0.86); color: #ffffff; text-transform: uppercase; letter-spacing: 2px; line-height: 40px; font-family: Lato, sans-serif; text-align: center;', 
     });
 
 });
+
+
+
+//--------------------gallery------------------//
+
+
+    var thumb1 = document.querySelector('#pic1');
+    var thumb2 = document.querySelector('#pic2');
+    var thumb3 = document.querySelector('#pic3');
+    var thumb4 = document.querySelector('#pic4');
+    var thumb5 = document.querySelector('#pic5');
+    var thumb6 = document.querySelector('#pic6');
+
+        thumb1.addEventListener('click', showPicOne);
+        thumb2.addEventListener('click', showPicTwo);
+        thumb3.addEventListener('click', showPicThree);
+        thumb4.addEventListener('click', showPicFour);
+        thumb5.addEventListener('click', showPicFive);
+        thumb6.addEventListener('click', showPicSix);
+
+
+    var bigPicCont = document.getElementById('mainPhotoBox');         
+        
+        function showPicOne() {
+            bigPicCont.className = '';
+            bigPicCont.classList.add('main-photo-box');
+            bigPicCont.classList.add('main-photo1');
+        }   
+        function showPicTwo() {
+            bigPicCont.className = '';
+            bigPicCont.classList.add('main-photo-box');
+            bigPicCont.classList.add('main-photo2');
+        }   
+        function showPicThree() {
+            bigPicCont.className = '';
+            bigPicCont.classList.add('main-photo-box');
+            bigPicCont.classList.add('main-photo3');
+        }   
+        function showPicFour() {
+            bigPicCont.className = '';
+            bigPicCont.classList.add('main-photo-box');
+            bigPicCont.classList.add('main-photo4');
+        }   
+        function showPicFive() {
+            bigPicCont.className = '';
+            bigPicCont.classList.add('main-photo-box');
+            bigPicCont.classList.add('main-photo5');
+        }   
+        function showPicSix() {
+            bigPicCont.className = '';
+            bigPicCont.classList.add('main-photo-box');
+            bigPicCont.classList.add('main-photo6');
+        }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //
 // contact Form SUBMIT
